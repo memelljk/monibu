@@ -4,5 +4,6 @@ require_relative "monibu/version"
 
 module Monibu
   class Error < StandardError; end
-  # Your code goes here...
+
+  require 'monibu/railtie' if defined?(Rails)
 end
