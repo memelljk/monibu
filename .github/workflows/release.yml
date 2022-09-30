@@ -6,6 +6,11 @@ on:
       rubygems-otp-code:
         description: RubyGems OTP code
         required: true
+        type: string
+      email:
+        description: Your email
+        required: true
+        type: string
 
 jobs:
   release:
@@ -25,8 +30,8 @@ jobs:
 
     - name: config
       run: |
-        git config --global user.email "ppyd@kinoppyd.dev"
-        git config --global user.name "kinoppyd"
+        git config --global user.email ${{ github.event.inputs.email }}
+        git config --global user.name ${{ github.actor }}
 
     - name: release
       run: bundle exec rake release
