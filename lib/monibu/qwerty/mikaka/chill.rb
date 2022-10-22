@@ -4,6 +4,10 @@ module Monibu
       def chill
         "Yo"
       end
+
+      def chillchill
+        "chillchill"
+      end
     end
   end
 end
