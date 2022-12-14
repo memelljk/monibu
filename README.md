@@ -40,7 +40,8 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## something
 
-> 1. foo
-> 2. bar
->   1. piyo
->   2. boo
+1. foo
+  1. txt
+2. bar
+　　　　2-1. piyo
+　　　　2-2. boo
