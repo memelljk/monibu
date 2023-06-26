@@ -1,0 +1,13 @@
+name: Hook on published
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo ${{ github.sha }}
+      - run: echo ${{ github.ref }}
