@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'sigs/**'
+      - 'sig/**'
 
 jobs:
   release_gem:
