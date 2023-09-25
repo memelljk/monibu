@@ -1,4 +1,4 @@
-# Monibu Monibu
+# Monibu
 module Monibu
   VERSION: String
   # See the writing guide of rbs: https://github.com/ruby/rbs#guides
