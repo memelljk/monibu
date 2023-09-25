@@ -22,5 +22,5 @@ jobs:
         run: |
           git log -1 --format='%H'
           git status
-          git merge --ff main
+          git merge --ff origin/main
           git push
