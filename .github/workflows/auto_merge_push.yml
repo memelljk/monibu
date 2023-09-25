@@ -15,12 +15,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: auto_merge_push
+        fetch-depth: 0
+        fetch-tags: true
 
       - name: auto merge push
         run: |
           git log -1 --format='%H'
           git status
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git merge --ff origin/main
+          git merge --ff main
           git push
