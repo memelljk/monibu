@@ -2,6 +2,7 @@
 
 require_relative "monibu/version"
 
+# Monibu
 module Monibu
   class Error < StandardError; end
 
